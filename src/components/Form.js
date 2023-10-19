@@ -57,7 +57,7 @@ export const Form = () => {
             console.log('los precios' ,precio1,precio2);
         }
         
-    }, [total])
+    }, [total,precio1,precio2])
 
 
 
@@ -158,7 +158,7 @@ export const Form = () => {
 
             <div className='products'>
                 <div className='items'>
-                    <img src={mochila}/>
+                    <img alt='mochila' src={mochila}/>
                     <div>
                         <h4>Vintage Backbag</h4>
                         <div className='precios'>
@@ -173,7 +173,7 @@ export const Form = () => {
                     </div>
                 </div>
                 <div className='items'>
-                    <img src={zapatos}/>
+                    <img alt='zapatos' src={zapatos}/>
                     <div>
                         <h4>Levi Shoes</h4>
                         <div className='precios'>
