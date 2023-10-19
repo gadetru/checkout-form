@@ -1,0 +1,322 @@
+@import'../app.scss';
+
+$gray1:#333;
+$gray2:#4F4F4F;
+$gray3:#828282;
+$gray4:#BDBDBD;
+$gray5:#4E5150;
+$gray6:#F2F2F2;
+$orange:#F2994A;
+
+
+// div{
+//     width: 100%;
+//     height: 300px;
+//     background-color: bisque;
+//     font-size: 50px;
+//     font-family: 'Montserrat';
+// }
+
+.titulo{
+    
+    font-family: 'Montserrat';
+    font-size: 36px;
+    color: $gray5;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 100px;
+
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+        .form-info{
+            //padding-left: 80px;
+            color:$gray1;
+            font-family: 'Montserrat';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+    .formulario1{
+
+        margin-left: 100px;
+        width: 40%;
+    
+        display: flex;
+        flex-direction: column;
+        label{
+            color:$gray2;
+            font-family: 'Montserrat';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+
+
+        // estilos parte flex del formulario
+
+        .form-country-pc{
+            display: flex;
+            justify-content: space-between;
+            
+        
+            .contenedor-input{
+             
+                width: 47%;
+
+                img{
+                    top: 42px;
+                }
+                select{
+                    margin-top: 10px;
+                    width: 100%;
+                    height: 56px;
+                    border-radius: 8px;
+                    border: 1px solid $gray3;
+                    background: #FFF;
+                    color: $gray3;
+                    // box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.20);
+                    padding-left: 45px;
+                    font-family: 'Montserryour email...at';
+                    box-sizing: border-box;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;                
+                }
+                
+            }
+        }
+        .contenedor-input{
+            position: relative;
+            width: 100%;
+            .icons{
+                position: absolute;
+                top:25px;
+                left: 17px;
+                width: 24px;
+            }
+            input{
+                margin-top: 10px;
+                width: 100%;
+                height: 56px;
+                // width: 80%;
+                // height: 50px;
+                border-radius: 8px;
+                border: 1px solid $gray3;
+                background: #FFF;
+                color: $gray3;
+                // box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.20);
+                padding-left: 55px;
+                font-family: 'Montserrat';
+                box-sizing: border-box;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;            
+            }
+
+        }
+        .flex-start{
+            height: 50px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            input{
+                width:24px;
+                height: 24px;
+            }
+            label{
+                margin: 0 ;
+                margin-left: 10px;
+                
+            }
+        }
+
+        // BOTON ENVIAR
+        .flex-end{
+            display: flex;
+            justify-content: flex-end;
+            input{
+                height: 54px;
+                width: 166px;
+                text-align: center;
+                border-radius: 12px ;
+                border: solid$orange;
+                background-color: $orange;
+                color: #FFF;
+                font-family: 'Montserrat';
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+
+
+    
+    }
+
+    //estilando caja de productos final
+
+    .products{
+
+        width: 30%;
+        height: fit-content;
+        border-radius: 12px;
+        background-color: $gray6;
+
+        .items{
+            width: 100%;
+            display: flex;
+            margin-top: 25px;
+            gap: 20px;
+            div{
+                width: 80%;
+            }
+            img{
+                width: 35%;
+                height: 35%;
+                object-fit: cover;
+                margin: 20px;
+                border-radius: 12px;
+            }
+            h4{
+                color: $gray5;
+                font-family: 'Montserrat';
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom:0 ;
+            }
+
+            .precios{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+
+                .precio-actual{
+                    color:$orange;
+                    font-family: 'Montserrat';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                .precio-original{
+                    color: $gray5;              
+                    font-family: 'Montserrat';
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-decoration-line: line-through;
+                   
+
+                }  
+            }
+
+
+            // BOTONERA MAS MENOS
+
+            .selector-producto{
+                display: flex;
+                flex-direction: row-reverse;
+                border: 1px solid $gray3;
+                border-radius: 12px;
+                width: 55%;
+                height: 3rem;
+                align-items: center;
+                justify-content: space-evenly;
+                button{
+                    font-weight: bolder;
+                    font-family: 'Montserrat';
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border:1px solid $gray2;
+                    border-radius: 5px;
+                    color: $gray3;
+                    background-color: #E0E0E0;
+                
+                }
+                p{
+                    font-weight: bolder;
+                    font-family: 'Montserrat';
+                }
+
+            }
+
+        }
+        .border-top{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            color:$gray1;
+            font-family: 'Montserrat';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            border-top: 1px solid $gray4;
+        
+        }
+    }
+    
+
+    
+}
+
+// FOOTER PROVISIONAL
+    footer{
+        //height: 50px;
+        p{
+            margin-top: 60px;
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Montserrat';
+            color: $gray3;
+
+        }
+    }
+
+    @media (min-width: 480px) and (max-width: 1000px) {
+        main{
+
+            .formulario1{
+                margin-left: 20px;
+            }
+
+            .products{
+                width: 50%;
+            }
+        }
+
+    }
+
+    @media( max-width:480px){
+
+
+        main{
+            flex-direction:column-reverse ;
+            align-items: center;
+
+            .products{
+                width: 90%;
+                margin: 10px;
+            }
+            .formulario1{
+                width: 90%;
+                margin-left: 0;
+                margin: 10px;
+            }
+        }
+    }
